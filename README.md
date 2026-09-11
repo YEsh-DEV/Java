@@ -14,9 +14,19 @@ Java Lab/
 ├── Lab2/
 │   ├── EntitiesDemo.java         # OOP structure modeling Student, Faculty, Employee, and Library
 │   └── MyStringDemo.java         # Custom string wrapper modeling common operations (length, reverse, split)
-├── .gitignore                    # Excludes compiled .class files and IDE meta-files
-├── run_labs.ps1                  # Interactive PowerShell script to run exercises
-└── README.md                     # Documentation
+├── Lab3/
+│   ├── snf.java                  # Student & Faculty marks entry/viewing
+│   └── keywords.java             # Java keywords (super, this, final)
+├── Lab4/
+│   ├── SingleInheritance.java        # Single inheritance (Dog extends Animal)
+│   ├── MultilevelInheritance.java    # Multilevel inheritance (Puppy extends Dog extends Animal)
+│   ├── HierarchicalInheritance.java  # Hierarchical inheritance (Dog & Cat extend Animal)
+│   ├── HybridInheritance.java        # Hybrid inheritance (Puppy extends Dog implements Pet)
+│   ├── Operations.java               # Class with math operations (avg, min, max, median, std dev)
+│   └── GradesStatistics.java         # Reads grades and displays statistics using Operations
+├── .gitignore                        # Excludes compiled .class files and IDE meta-files
+├── run_labs.ps1                      # Interactive PowerShell script to run exercises
+└── README.md                         # Documentation
 ```
 
 ---
@@ -55,6 +65,36 @@ Builds a custom wrapper class (`MyString`) around the primitive String operation
 - **Custom Reverse:** Iteratively reverses characters using indexing (without using `StringBuilder.reverse()`).
 - **Replace/Case Conversion:** Exercises basic built-in replacements and casing.
 - **Splitting:** Divides text based on specified delimiters.
+
+---
+
+### 🔹 Lab 3: Classes & Java Keywords
+
+#### 5. [`snf.java`](file:///Lab3/snf.java)
+Demonstrates interaction between classes (`Student` and `Faculty`) for entering and viewing marks.
+
+#### 6. [`keywords.java`](file:///Lab3/keywords.java)
+Demonstrates Java keywords such as `this`, `super`, and `final`.
+
+---
+
+### 🔹 Lab 4: Inheritance & Grade Statistics
+
+#### 7. [`SingleInheritance.java`](file:///Lab4/SingleInheritance.java)
+Demonstrates Single Inheritance (`Dog` extends `Animal`).
+
+#### 8. [`MultilevelInheritance.java`](file:///Lab4/MultilevelInheritance.java)
+Demonstrates Multilevel Inheritance (`Puppy` extends `Dog` extends `Animal`).
+
+#### 9. [`HierarchicalInheritance.java`](file:///Lab4/HierarchicalInheritance.java)
+Demonstrates Hierarchical Inheritance (`Dog` and `Cat` extend `Animal`).
+
+#### 10. [`HybridInheritance.java`](file:///Lab4/HybridInheritance.java)
+Demonstrates Hybrid Inheritance (`Puppy` extends `Dog` implements `Pet`).
+
+#### 11. [`Operations.java`](file:///Lab4/Operations.java) & [`GradesStatistics.java`](file:///Lab4/GradesStatistics.java)
+- **`Operations.java`:** Contains methods to compute average, minimum, maximum, median, and standard deviation.
+- **`GradesStatistics.java`:** Reads $n$ grades (0–100), validates input, invokes `Operations` methods, and formats floating-point values to 2 decimal places.
 
 ---
 
@@ -98,6 +138,48 @@ java -cp Lab2 EntitiesDemo
 ```bash
 javac Lab2/MyStringDemo.java
 java -cp Lab2 MyStringDemo
+```
+
+#### **Lab 3 - Student and Faculty**
+```bash
+javac Lab3/snf.java
+java -cp Lab3 Main
+```
+
+#### **Lab 3 - Keywords Demo**
+```bash
+javac Lab3/keywords.java
+java -cp Lab3 keywords
+```
+
+#### **Lab 4 - Single Inheritance**
+```bash
+javac Lab4/SingleInheritance.java
+java -cp Lab4 SingleInheritance
+```
+
+#### **Lab 4 - Multilevel Inheritance**
+```bash
+javac Lab4/MultilevelInheritance.java
+java -cp Lab4 MultilevelInheritance
+```
+
+#### **Lab 4 - Hierarchical Inheritance**
+```bash
+javac Lab4/HierarchicalInheritance.java
+java -cp Lab4 HierarchicalInheritance
+```
+
+#### **Lab 4 - Hybrid Inheritance**
+```bash
+javac Lab4/HybridInheritance.java
+java -cp Lab4 HybridInheritance
+```
+
+#### **Lab 4 - Grade Statistics**
+```bash
+javac -cp Lab4 Lab4/GradesStatistics.java
+java -cp Lab4 GradesStatistics
 ```
 
 ---
